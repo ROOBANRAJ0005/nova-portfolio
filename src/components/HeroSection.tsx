@@ -8,6 +8,7 @@ const HeroSection = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
 
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <ParticleBackground />
@@ -36,8 +37,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-5xl md:text-7xl font-bold mb-4"
           >
-            <span className="text-foreground">John </span>
-            <span className="text-primary text-glow">Developer</span>
+            <span className="text-foreground ml-[-3px]">ROOBANRAJ </span>
+            {/* <span className="text-primary text-glow">Developer</span> */}
           </motion.h1>
           
           <motion.h2
@@ -76,6 +77,13 @@ const HeroSection = () => {
               className="px-8 py-4 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 text-center"
             >
               Get In Touch
+            </a>
+            <a
+               href="/ResumeQr.pdf"
+               download
+               className="px-8 py-4 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300 text-center"
+            >
+              Download Resume
             </a>
           </motion.div>
         </motion.div>

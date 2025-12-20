@@ -6,31 +6,28 @@ const skillCategories = [
   {
     title: "Frontend",
     skills: [
-      { name: "React", level: 95 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 90 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "HTML/CSS", level: 98 },
+      { name: "React", level: 80 },
+      { name: "Tailwind CSS", level: 70 },
+      { name: "HTML/CSS", level: 95 },
+      { name: "Bootstrap", level:80 },
+      { name: "JavaScript", level:90 }
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", level: 92 },
-      { name: "Express.js", level: 90 },
-      { name: "MongoDB", level: 88 },
-      { name: "PostgreSQL", level: 75 },
-      { name: "REST APIs", level: 95 },
+      { name: "Node.js", level: 80 },
+      { name: "Express.js", level: 85 },
+      { name: "MongoDB", level: 78 },
+      { name: "REST APIs", level: 90 },
     ],
   },
   {
     title: "Tools & Others",
-    skills: [
+    skills: [ 
       { name: "Git/GitHub", level: 90 },
-      { name: "Docker", level: 70 },
-      { name: "AWS", level: 65 },
-      { name: "Jest", level: 80 },
-      { name: "Figma", level: 75 },
+      { name: "Postman", level: 85 },
+      { name: "Thunder Client", level: 80 },
     ],
   },
 ];
@@ -41,7 +38,7 @@ const SkillsSection = () => {
 
   return (
     <section id="skills" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-black/70" />
       
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
         <motion.div
@@ -51,7 +48,7 @@ const SkillsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            My <span className="text-primary text-glow">Skills</span>
+            My <span className="text-black text-glow">Skills</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg">

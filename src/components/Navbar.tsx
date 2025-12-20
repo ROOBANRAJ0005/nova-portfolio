@@ -40,10 +40,10 @@ const Navbar = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <motion.a
             href="#home"
-            className="text-2xl font-bold text-primary"
+            className="text-2xl font-bold text-black"
             whileHover={{ scale: 1.05 }}
           >
-            JD<span className="text-foreground">.</span>
+            R7J<span className="text-foreground">.</span>
           </motion.a>
 
           {/* Desktop Navigation */}

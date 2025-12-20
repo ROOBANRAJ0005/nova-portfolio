@@ -8,53 +8,29 @@ const projects = [
     title: "E-Commerce Platform",
     description: "Full-featured online store with cart, checkout, and payment integration using Stripe. Includes admin dashboard for product management.",
     image: "🛒",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "#",
-    githubUrl: "#",
+    technologies: ["React", "Node.js", "MongoDB", "Stripe","JWT"],
+    liveUrl: "https://crybaby.vercel.app/",
+    githubUrl: "https://github.com/ROOBANRAJ0005/CRYBABY",
   },
   {
-    title: "Social Media Dashboard",
-    description: "Real-time social media analytics dashboard with data visualization, user authentication, and scheduled posting features.",
-    image: "📊",
-    technologies: ["Next.js", "Express", "PostgreSQL", "Chart.js"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Task Management App",
-    description: "Collaborative project management tool with drag-and-drop kanban boards, real-time updates, and team collaboration features.",
-    image: "📋",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "AI Content Generator",
-    description: "AI-powered content generation platform using OpenAI API for blog posts, social media content, and marketing copy.",
-    image: "🤖",
-    technologies: ["React", "Express", "OpenAI", "Redis"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Real Estate Portal",
-    description: "Property listing platform with advanced search filters, virtual tours, mortgage calculator, and agent dashboard.",
-    image: "🏠",
-    technologies: ["Next.js", "Node.js", "MongoDB", "Mapbox"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Calculator",
+    description: "A basic calculator built using HTML, CSS, and JavaScript that performs standard arithmetic operations. It features a clean and responsive design for smooth and easy user interaction.",
+    image: "🧮",
+    technologies: ["React"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     title: "Fitness Tracking App",
     description: "Personal fitness companion with workout tracking, meal planning, progress charts, and social challenges.",
     image: "💪",
     technologies: ["React", "Express", "MongoDB", "JWT"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "",
+    githubUrl: "",
   },
 ];
 
-const categories = ["All", "React", "Next.js", "Node.js", "MongoDB"];
+const categories = ["All", "React", "Node.js", "MongoDB"];
 
 const ProjectsSection = () => {
   const ref = useRef(null);

@@ -12,12 +12,12 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           className="flex flex-col md:flex-row items-center justify-between gap-4"
         >
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} John Developer. All rights reserved.
+          <p className="text-gray-300 text-sm">
+            © {new Date().getFullYear()} Roobanraj Developer. All rights reserved.
           </p>
           
-          <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Built with <Heart className="w-4 h-4 text-primary fill-primary" /> using React & TypeScript
+          <p className="text-gray-300 text-sm flex items-center gap-1">
+            Built with <Heart className="w-4 h-4 text-gray-300 fill-primary" /> using React & TypeScript
           </p>
         </motion.div>
       </div>

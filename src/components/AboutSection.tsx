@@ -3,10 +3,9 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const stats = [
-  { number: "3+", label: "Years Experience" },
-  { number: "50+", label: "Projects Completed" },
-  { number: "30+", label: "Happy Clients" },
-  { number: "10+", label: "Technologies" },
+  { number: "4+", label: "TOOLS" },
+  { number: "7+", label: "Projects Completed" },
+  { number: "8+", label: "Technologies" },
 ];
 
 const AboutSection = () => {
@@ -15,12 +14,15 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card/20 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/40 to-black/80
+
+
+" />
       
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : {}} 
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -57,17 +59,14 @@ const AboutSection = () => {
             <h3 className="text-2xl font-semibold mb-6 text-foreground">
               Passionate Full-Stack Developer
             </h3>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
               I'm a dedicated MERN stack developer with a passion for creating 
               efficient, scalable, and user-friendly web applications. With expertise 
               in MongoDB, Express.js, React, and Node.js, I transform complex problems 
               into elegant digital solutions.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              My journey in web development started 3 years ago, and since then, 
-              I've had the privilege of working with startups and established companies 
-              alike, helping them bring their visions to life through clean code and 
-              innovative thinking.
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              My web development journey began 1 year ago. As a fresher, I’ve been actively working on personal and practice projects to strengthen my skills. I’m committed to writing clean code and creating meaningful, user-friendly web experiences.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">

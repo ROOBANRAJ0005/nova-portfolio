@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Phone, Send, Github, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { SiInstagram, SiGmail, SiLinkedin } from "react-icons/si";
+
+
+
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -41,16 +46,17 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "hello@example.com" },
-    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-    { icon: MapPin, label: "Location", value: "San Francisco, CA" },
+    { icon: Mail, label: "Email", value: "roobanraj0005@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+91 9080921069" },
+    { icon: MapPin, label: "Location", value: "Madurai" },
   ];
 
-  const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-  ];
+
+const socialLinks = [
+  { icon: SiGmail, href: "mailto:roobanraj0005@gmail.com", label: "Gmail" },
+  { icon: SiLinkedin, href: "https://www.linkedin.com/in/rooban-raj-93101b253", label: "LinkedIn" },
+  { icon: SiInstagram, href: "https://www.instagram.com/roobanraj6?igsh=YXIwc3Z5OHZvMGNp", label: "Instagram" },
+];
 
   return (
     <section id="contact" className="py-24 relative">
@@ -107,7 +113,7 @@ const ContactSection = () => {
                   <motion.a
                     key={social.label}
                     href={social.href}
-                    target="_blank"
+                    target={social.label === "Gmail" ? "_self" : "_blank"}
                     rel="noopener noreferrer"
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
