@@ -26,7 +26,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-primary font-mono text-lg mb-4"
+            className="text-muted-foreground font-mono text-lg mb-4"
           >
             Hello, I'm
           </motion.p>
